@@ -8,10 +8,6 @@ import mockit.Injectable;
 import mockit.Mock;
 import mockit.MockUp;
 import mockit.Tested;
-import org.junit.Assert;
-import com.lightbend.lagom.javadsl.api.ServiceCall;
-import com.lightbend.lagom.javadsl.server.ServiceCall;
-
 import static org.junit.Assert.assertEquals;
 
 
