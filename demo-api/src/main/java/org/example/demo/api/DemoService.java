@@ -14,7 +14,7 @@ public interface DemoService extends Service {
 
     ServiceCall<NotUsed , Pair<String,String>> demo(String id);
 
-    ServiceCall<String , String> demoPost(String id, String name);
+    ServiceCall<String ,  Pair<String,String>> demoPost(String id, String name);
 
     @Override
     default Descriptor descriptor(){

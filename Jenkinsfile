@@ -36,7 +36,8 @@ private String getMicroserviceInformation() {
 private String runMavenVerify(MAVEN_HOME) {
 
     int verificationStatus = sh script: "${MAVEN_HOME}/mvn clean verify --fail-at-end --batch-mode --update-snapshots", returnStatus: true
-    
+
+
     if (verificationStatus != 0) {
         error('The Maven verification of the service has failed.')
     }
