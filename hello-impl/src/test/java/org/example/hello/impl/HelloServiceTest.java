@@ -1,3 +1,4 @@
+/*
 package org.example.hello.impl;
 
 import static com.lightbend.lagom.javadsl.testkit.ServiceTest.defaultSetup;
@@ -29,3 +30,4 @@ public class HelloServiceTest {
   }
 
 }
+*/
