@@ -1,16 +1,12 @@
 package org.example.demo.impl;
 
-import akka.NotUsed;
 import akka.japi.Pair;
 import com.lightbend.lagom.javadsl.api.transport.RequestHeader;
 import com.lightbend.lagom.javadsl.api.transport.ResponseHeader;
-import com.lightbend.lagom.javadsl.server.HeaderServiceCall;
-import org.junit.Test;
 import mockit.Expectations;
 import mockit.Injectable;
-import mockit.Mock;
-import mockit.MockUp;
 import mockit.Tested;
+import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 

@@ -17,7 +17,6 @@ public class DemoServiceImpl implements DemoService {
     @Inject
     public DemoServiceImpl(MockingDemo mockingDemo) {
         this.mockingDemo = mockingDemo;
-        //String value = mockingDemo.data;
     }
 
     @Override
@@ -25,8 +24,6 @@ public class DemoServiceImpl implements DemoService {
         return request -> {
             String data = "Id_value";
             String res = mockingDemo.mockDemo("abc");
-            String res1 = mockingDemo.mockDemo("ab");
-            // String res = "abc";
             Pair<String, String> result = Pair.create(data + res, id);
             return CompletableFuture.completedFuture(result);
         };
@@ -36,10 +33,7 @@ public class DemoServiceImpl implements DemoService {
     public HeaderServiceCall<String, Pair<String, String>> demoPost(String id, String name) {
         return (requestHeader, request) -> {
             Pair<String, String> result = Pair.create(id, name);
-            //return CompletableFuture.completedFuture(Pair.create(requestHeader,"ghyhg"));
-
-            return CompletableFuture.completedFuture(Pair.create(ResponseHeader.OK,
-                    result));
+            return CompletableFuture.completedFuture(Pair.create(ResponseHeader.OK, result));
         };
     }
 }

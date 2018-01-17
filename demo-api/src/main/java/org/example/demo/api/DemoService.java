@@ -7,7 +7,6 @@ import com.lightbend.lagom.javadsl.api.Service;
 import com.lightbend.lagom.javadsl.api.ServiceCall;
 import com.lightbend.lagom.javadsl.api.transport.Method;
 
-import static com.lightbend.lagom.javadsl.api.Service.pathCall;
 import static com.lightbend.lagom.javadsl.api.Service.named;
 
 public interface DemoService extends Service {
